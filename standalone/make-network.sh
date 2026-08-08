@@ -31,6 +31,6 @@ docker run --rm --network host \
   --env COIN_NAME --env COIN_SYMBOL --env COIN_INITIAL_SUPPLY --env COIN_MAX_SUPPLY \
   --env COIN_ADMIN_ADDRESS --env COIN_TREASURY_ADDRESS \
   ghcr.io/foundry-rs/foundry:stable \
-  sh -lc 'test -d lib/forge-std || forge install foundry-rs/forge-std OpenZeppelin/openzeppelin-contracts; forge script script/DeployOwnCoin.s.sol:DeployOwnCoin --rpc-url "$RPC_URL" --private-key "$PRIVATE_KEY" --broadcast'
+  sh -lc 'test -d lib/forge-std || forge install --no-commit foundry-rs/forge-std OpenZeppelin/openzeppelin-contracts; forge script script/DeployOwnCoin.s.sol:DeployOwnCoin --rpc-url "$RPC_URL" --private-key "$PRIVATE_KEY" --broadcast'
 
 echo "Private network RPC: http://127.0.0.1:${RPC_PORT:-8545}"
