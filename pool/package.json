@@ -1,0 +1,13 @@
+{
+  "name": "standalone-stratum-relay",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Transparent Stratum relay and worker telemetry for a self-operated proof-of-work pool.",
+  "main": "stratum-relay.js",
+  "scripts": {
+    "start": "node stratum-relay.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
