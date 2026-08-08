@@ -5,6 +5,7 @@ This repository contains the public, non-bot Solidity source for the former Whea
 - `WheatCoin.sol`: a capped ERC-20 implementation with role-based minting, pausing, burning, and EIP-2612 permits.
 - `WheatTokenFactory.sol`: an optional fixed-supply community-token factory.
 - `test/`: Foundry tests covering the core behaviour.
+- `script/DeployCommunityTokenFactory.s.sol`: a generic deployment script for your own EVM network.
 
 ## Project status
 
@@ -21,7 +22,7 @@ forge install OpenZeppelin/openzeppelin-contracts foundry-rs/forge-std
 forge test -vv
 ```
 
-The contracts target Solidity `0.8.24`. Copy `.env.example` to `.env` only if you are experimenting with your own deployment environment. Never commit private keys, RPC credentials, or real wallet secrets.
+The contracts target Solidity `0.8.24`. See [mainnet deployment](docs/mainnet-deployment.md) to deploy and operate your own fixed-supply token factory. Copy `.env.example` to `.env` only if you are experimenting with your own deployment environment. Never commit private keys, RPC credentials, or real wallet secrets.
 
 ## License
 
