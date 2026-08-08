@@ -22,7 +22,7 @@ forge install OpenZeppelin/openzeppelin-contracts foundry-rs/forge-std
 forge test -vv
 ```
 
-The contracts target Solidity `0.8.24`. See [mainnet deployment](docs/mainnet-deployment.md) to deploy and operate your own fixed-supply token factory. Copy `.env.example` to `.env` only if you are experimenting with your own deployment environment. Never commit private keys, RPC credentials, or real wallet secrets.
+The contracts target Solidity `0.8.24`. See [mainnet deployment](docs/mainnet-deployment.md) to deploy a token factory, or use the [standalone private network starter](standalone/README.md) to run your own local EVM network and deploy a custom coin. Copy `.env.example` to `.env` only if you are experimenting with your own deployment environment. Never commit private keys, RPC credentials, or real wallet secrets.
 
 ## License
 
